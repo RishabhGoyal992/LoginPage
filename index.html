@@ -39,29 +39,31 @@ overflow-x: hidden;
 				margin-top: 20vh;
 				margin-bottom: 20vh;
 				background:linear-gradient( #867cf4 0%, #867cf9 0%);
-				background:-webkit-linear-gradient(top, #867cf4 0%, #867cf9  0%);
+				background:-webkit-linear-gradient(top, #867cf4 0%, #fff  0%);
 		}
 
 
 		h2{
 			margin: 0 0 30px 0;
 			padding: 10px;
-			color: #fff;
+			color: #867cf4;
 			text-align: center;
 			font-family: 'Oswald', sans-serif;
 
 		}
-
+form{
+margin-top: 80px;
+}
 
 input[type=text], input[type=password]{
 	width: 100%;
 	border: none;
 	outline: none;
-	border: 2px #fff groove;
+	border: 2px #867cf4 groove;
 	background:transparent;
 	border-radius: 20px;
 	box-sizing: border-box;
-	color: #fff;
+	color: #867cf4;
 	font-size: 16px;
 	padding: 10px;
 	text-align: center;
@@ -102,23 +104,24 @@ input[type=submit]{
 	background:transparent;
 	border-radius: 20px;
 	box-sizing: border-box;
-	color: #867cf9;
+	color: #fff;
 	font-size: 20px;
 	padding: 10px;
 	text-align: center;
-	background:#fff;
+	background:#867cf4;
 	margin-bottom:30px;
 	font-style: bold;
 
 }
+
 ::placeholder{
-	color: rgba(255,255,255,0.5);
+	color: #867cf4;
 	text-align: center;
 
 }
 input[type=submit]:hover{
-	background:#867cf9;
-	color: #fff; 
+	background:#fff;
+	color: #867cf4; 
 }
 
 
@@ -146,6 +149,7 @@ function FixBackgroundToScreen()
 <Div class ="login">
 	<h2>LOG IN HERE</h2>
 	<form>
+
 		<input class="lol" type="text" name="username" placeholder="username">
 		<input class="loll" type="password" name="password" placeholder="password">
    		<input type="submit" name="login" value="LOGIN">
